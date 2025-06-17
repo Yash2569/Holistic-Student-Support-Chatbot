@@ -1,0 +1,201 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hello", "Hi", "Hey", "Good morning", "Good evening", "Hi there", "Hey MindMate"],
+            "responses": [
+                "Hello! How can I assist you today?",
+                "Hi there! I'm here to help with anything you need.",
+                "Hey! What can I do for you today?",
+                "Good day! How can I support you?",
+                "Hi! What’s on your mind?"
+            ]
+        },
+        {
+            "tag": "mental_health",
+            "patterns": [
+                "I'm feeling anxious.",
+                "I need someone to talk to.",
+                "I'm struggling with my emotions.",
+                "I feel overwhelmed.",
+                "I feel like giving up."
+            ],
+            "responses": [
+                "It's okay to feel this way. I'm here for you.",
+                "Talking about your feelings can help. What’s on your mind?",
+                "You're not alone in this. Can you share more about how you feel?",
+                "Let’s talk about it."
+            ]
+        },
+        {
+            "tag": "depression_followup",
+            "patterns": [
+                "I feel empty inside.",
+                "I don’t know how to feel better.",
+                "I feel like I’m sinking."
+            ],
+            "responses": [
+                "Feeling empty is tough. Sometimes connecting with others or writing down thoughts can help.",
+                "It’s okay to feel lost. Small steps, like focusing on things that bring comfort, can make a difference.",
+                "I'm here for you, and if it feels overwhelming, consider reaching out to a mental health professional."
+            ]
+        },
+        {
+            "tag": "depression_solutions",
+            "patterns": [
+                "How can I feel better?",
+                "What can I do when I’m down?",
+                "Do you have any suggestions?"
+            ],
+            "responses": [
+                "Try small things that bring comfort, like listening to your favorite music, taking a walk, or journaling your thoughts.",
+                "Sometimes practicing mindfulness or deep breathing can help. Would you like a quick breathing exercise?",
+                "It might help to reach out to a close friend or family member for support. Sharing can lighten the burden."
+            ]
+        },
+        {
+            "tag": "homesickness",
+            "patterns": [
+                "I miss home.",
+                "I feel lonely away from my family.",
+                "Being away from home is hard."
+            ],
+            "responses": [
+                "It’s natural to miss home. Have you tried giving your loved ones a call or video chatting with them?",
+                "Sometimes connecting with new friends can help. Have you tried joining a group or activity where you are?",
+                "Homesickness can be tough. Maybe sharing how you feel with someone close to you might help."
+            ]
+        },
+        {
+            "tag": "boredom",
+            "patterns": ["I'm bored.", "What can I do for fun?", "I need something to do."],
+            "responses": [
+                "How about trying a new hobby like drawing, reading, or even learning something new online?",
+                "You could try watching a movie, playing a game, or going for a walk to refresh your mind.",
+                "Sometimes a simple activity like organizing your space or listening to music can make a big difference."
+            ],
+            "follow_ups": [
+                {
+                    "question": "Would you like to hear a joke to lighten the mood?",
+                    "responses": [
+                        "Sure! Why don’t scientists trust atoms? Because they make up everything!",
+                        "What’s orange and sounds like a parrot? A carrot!",
+                        "Why did the scarecrow win an award? Because he was outstanding in his field!"
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "suicidal_thoughts",
+            "patterns": ["I feel like giving up.", "I don’t want to go on anymore.", "I can't handle this anymore."],
+            "responses": [
+                "I'm really sorry you're feeling this way. Please know that you don't have to face this alone.",
+                "You're not alone, and there are people who care about you. Consider contacting a mental health professional.",
+                "Talking to someone about these feelings might be helpful. Reach out to someone you trust or a counselor."
+            ],
+            "critical_actions": [
+                {
+                    "action": "Contact a helpline",
+                    "suggestions": [
+                        "Please contact emergency support services in your area.",
+                        "You can call +91 9152987821 or a local crisis hotline.",
+                        "Speaking to a professional can make a big difference."
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "academic_assistance",
+            "patterns": [
+                "I need help with my homework.",
+                "Can you explain this topic to me?",
+                "I'm struggling with my studies."
+            ],
+            "responses": [
+                "I can help with that! What subject do you need assistance with?",
+                "Let’s break it down. Which topic is giving you trouble?",
+                "It sounds like you’re looking for resources. I can suggest a few options."
+            ]
+        },
+        {
+            "tag": "math_help",
+            "patterns": ["I’m struggling with math.", "Can you help me with algebra?"],
+            "responses": [
+                "Math can be tricky! Breaking it down step by step might help. Which area are you working on?",
+                "Here’s a helpful site for practice: https://www.khanacademy.org."
+            ]
+        },
+        {
+            "tag": "history_help",
+            "patterns": ["I need help with history.", "Can you explain World War II?"],
+            "responses": [
+                "History is fascinating! For resources, you can check https://www.history.com.",
+                "What specific topic are you curious about?"
+            ]
+        },
+        {
+            "tag": "career_guidance",
+            "patterns": [
+                "What career should I pursue?",
+                "I need career advice.",
+                "What jobs are good for me?"
+            ],
+            "responses": [
+                "Career decisions can be tricky. What are your interests or skills?",
+                "Consider exploring fields like technology, healthcare, or design based on your passions.",
+                "You can find career guidance resources on https://www.coursera.org or https://www.linkedin.com/learning."
+            ]
+        },
+        {
+            "tag": "technology_career",
+            "patterns": [
+                "What careers are there in technology?",
+                "I’m interested in a tech career.",
+                "Can you tell me about jobs in technology?"
+            ],
+            "responses": [
+                "Tech is booming! Have you considered software development, data science, or AI?",
+                "Careers in technology include fields like cybersecurity, web development, and machine learning.",
+                "Here are some learning platforms to start: https://www.udemy.com, https://www.codecademy.com."
+            ]
+        },
+        {
+            "tag": "healthcare_career",
+            "patterns": [
+                "What careers are there in healthcare?",
+                "I’m interested in healthcare jobs.",
+                "Can you tell me about healthcare roles?"
+            ],
+            "responses": [
+                "Healthcare is a rewarding field. Consider nursing, medical research, or therapy roles.",
+                "You could explore areas like physiotherapy, public health, or clinical research.",
+                "Learn more on platforms like https://www.edx.org or by speaking to professionals in the field."
+            ]
+        },
+        {
+            "tag": "resume_help",
+            "patterns": ["I need help with my resume.", "How can I create a good CV?"],
+            "responses": [
+                "A great resume highlights your skills and experience clearly.",
+                "You can use online tools like https://novoresume.com or https://zety.com to create a professional resume."
+            ]
+        },
+        {
+            "tag": "internship_guidance",
+            "patterns": ["How can I find internships?", "I need help with internships."],
+            "responses": [
+                "Internships are great for gaining experience. What field are you interested in?",
+                "You can explore platforms like https://internshala.com or https://www.linkedin.com/jobs."
+            ]
+        },
+        {
+            "tag": "thank_you",
+            "patterns": ["Thank you", "Thanks", "Thank you so much"],
+            "responses": [
+                "You're very welcome! Let me know if there's anything else I can help with.",
+                "Anytime! I'm here to support you.",
+                "You're welcome! Take care of yourself."
+            ]
+        }
+    ]
+}
